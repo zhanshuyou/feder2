@@ -1,7 +1,7 @@
-import { TIndexStructureHnsw, hnswlibIndexParser } from './hnswlibParser';
+import { hnswlibIndexParser } from './hnswlibParser';
 import { faissIndexParser } from './faissParser';
 import { ESourceType } from 'Types';
-import { TIndexStructure } from 'FederIndex/Types';
+import { TIndexStructure } from 'Types/indexStructure';
 
 const parserMap = {
   [ESourceType.hnswlib]: hnswlibIndexParser,
